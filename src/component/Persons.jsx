@@ -6,7 +6,7 @@ function Persons(props){
         <div className='persons'>
             {persons.map((person)=> <Card 
                 key={person.id}
-                firstName={person.firstname} 
+                firstname={person.firstname} 
                 title={person.title} 
                 age={person.age} 
                 animal={person.animal} 
