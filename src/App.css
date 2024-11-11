@@ -1,0 +1,20 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.persons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+header{
+  font-size: 40px;
+}
+
+.in-out-button {
+  margin-bottom: 10px;
+}

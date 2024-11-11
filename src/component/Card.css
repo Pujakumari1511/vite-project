@@ -1,0 +1,17 @@
+.cards {
+    background-color: azure;
+    padding: 1rem;
+    box-shadow: 0 0 5px #333;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+  }
+
+  .title-red {
+    color: red;
+  }
+
+  .title-green {
+    color: green;
+  }
