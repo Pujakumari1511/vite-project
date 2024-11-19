@@ -1,15 +1,21 @@
 import persons from '../data/personsData';
 import Card from './Card';
 
-function Persons(props){
+
+const handleClick = (id) => {
+    console.log(`Card ${id} was clicked`);
+  }
+
+function Persons(){
     return (
         <div className='persons'>
             {persons.map((person)=> <Card 
                 key={person.id}
-                firstName={person.firstname} 
+                firstname={person.firstname} 
                 title={person.title} 
                 age={person.age} 
-                animal={person.animal} 
+                animal={person.animal}
+                appClick={() => handleClick(person.id)} 
             />)}
         </div>
     )
