@@ -1,5 +1,7 @@
 import persons from '../data/personsData';
 import Card from './Card';
+import { LogIn } from './LogIn';
+import './Persons.css';
 
 
 const handleClick = (id) => {

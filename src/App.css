@@ -5,12 +5,6 @@
   text-align: center;
 }
 
-.persons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
 header{
   font-size: 40px;
 }

@@ -4,7 +4,7 @@ import List from "../pages/List";
 import About from "../pages/About";
 import { ErrorPage } from "../pages/ErrorPage";
 
-export const router = createBrowserRouter([
+export const Router = createBrowserRouter([
     {
         path: '/',
         element: <Root />,
@@ -15,5 +15,19 @@ export const router = createBrowserRouter([
 
         ]
     },
-  
-]);
+
+],
+
+{
+    future: {
+        v7_relativeSplatPath: true,
+        v7_fetcherPersist: true,
+        v7_normalizeFormMethod: true,
+        v7_partialHydration: true,
+        v7_skipActionErrorRevalidation: true,
+      },
+},
+);
+
+
+

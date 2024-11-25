@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Header } from "../component/header";
+import { Header } from "../component/Header";
 
 const Root = () => {
     return (
@@ -10,4 +10,4 @@ const Root = () => {
     )
 };
 
-export default Root;
+export default Root; 

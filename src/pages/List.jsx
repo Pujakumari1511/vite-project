@@ -1,5 +1,13 @@
+
+import Persons from "../component/Persons";
+
 const List = () => {
-    return <div>I am the List </div>
+    return (
+        <Persons />
+    )
+    
+        
+    
 };
 
 export default List;

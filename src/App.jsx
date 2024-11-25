@@ -1,11 +1,9 @@
-import './App.css'
-import Card from './component/Card';
-
-import { useState } from 'react';
-import Persons from './component/Persons';
+import './App.css';
+import { RouterProvider } from 'react-router-dom';
+import { Router } from './routes/AppRoutes';
 
 function App() {
- return <RouterProvider router={router} />;
+ return <RouterProvider router={Router} />;
  
 }
 export default App;
