@@ -1,14 +1,16 @@
+import { useNavigate } from 'react-router-dom';
 import persons from '../data/personsData';
 import Card from './Card';
 import { LogIn } from './LogIn';
 import './Persons.css';
 
-
-const handleClick = (id) => {
-    console.log(`Card ${id} was clicked`);
-  }
-
 function Persons(){
+    const navigate = useNavigate();
+
+    const handleNavigate = (id) => {
+        navigate(`/${id}`)
+        console.log(id);
+      }
     return (
         <div className='persons'>
             {persons.map((person)=> <Card 
@@ -17,7 +19,7 @@ function Persons(){
                 title={person.title} 
                 age={person.age} 
                 animal={person.animal}
-                appClick={() => handleClick(person.id)} 
+                onClick={() => handleNavigate(person.id)}
             />)}
         </div>
     )
