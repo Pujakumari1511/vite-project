@@ -15,12 +15,12 @@ function Card({firstname, title, age, animal}){
       <p className={age<15 ? 'title-red': 'title-green'}><b>Title:</b> {title}</p>
       <p><b>Age:</b> {age}</p> 
       {isEditing ? (
-        <input type="text" value={animalValue} onChange={handleChange} />
+        <input className={'animal-edit-textarea'} type="text" value={animalValue} onChange={handleChange} />
       ) : (
       <p><b>Animal:</b> {animalValue}</p> 
       )}
       <div>
-        <Button className={'animal-edit-button'} onClick={toggleEdit} text={isEditing ? "save" : 'Edit'} /> 
+        <Button onClick={toggleEdit} text={isEditing ? "save" : 'Edit'} /> 
       </div >  
     </div>
   );
